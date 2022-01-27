@@ -2,7 +2,7 @@
 
 ## Indicaciones
 
-_Como recomendación se recomienda usar archivos CSV de prueba, para lo cuál recomiendo https://www.mockaroo.com/  para la creación de datos de pruebas._
+_Se recomienda usar archivos CSV de prueba, para lo cuál recomiendo https://www.mockaroo.com/  para la creación de datos de pruebas._
 
 ```
 
