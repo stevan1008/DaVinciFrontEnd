@@ -1,0 +1,32 @@
+<div class="container"
+     fxLayout="column"
+     fxLayoutGap="10px">
+
+  <div fxFlex>
+    <div>
+      <h3 style="text-align: center;">Estandarización de Archivos</h3>
+      <hr>
+    </div>
+  </div>
+
+  <mat-card>  
+      <label class="custom-file-upload" for="singleFile">Subir Archivo</label>
+      <input id="singleFile" type="file" [fileUploadInputFor]= "fileUploadQueue"/>
+  </mat-card>
+
+  <br>
+
+  <mat-file-upload-queue #fileUploadQueue
+    [fileAlias]="'recfile'"
+    [httpUrl]="'http://localhost:8080/upload'"
+    >
+
+    <mat-file-upload [routerLink]="['/datos']" [file]="file" [id]="i" *ngFor="let file of fileUploadQueue.files; let i = index" routerLink="/datos"></mat-file-upload>
+  </mat-file-upload-queue>
+
+
+<!--   <div>
+    <h2 id="dato-ultimo" style="text-align: center;"> Último elemento de la Campaña: </h2>
+    <h3>{{ultimoDato.Nombres}} {{ultimoDato.Apellidos }} con ID: {{ultimoDato.id }} </h3>
+    <h3>{{Nombres}} {{ultimoDato.Apellidos }} con ID: {{ultimoDato.id }} </h3>
+  </div> -->
