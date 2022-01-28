@@ -9,9 +9,9 @@
     </div>
   </div>
 
-  <mat-card>  
-      <label class="custom-file-upload" for="singleFile">Subir Archivo</label>
-      <input id="singleFile" type="file" [fileUploadInputFor]= "fileUploadQueue"/>
+  <mat-card style="text-align: center;">  
+      <label  class="custom-file-upload" for="singleFile">Subir Archivo</label>
+      <input  id="singleFile" type="file" [fileUploadInputFor]= "fileUploadQueue"/>
   </mat-card>
 
   <br>
@@ -25,8 +25,8 @@
   </mat-file-upload-queue>
 
 
-<!--   <div>
-    <h2 id="dato-ultimo" style="text-align: center;"> Último elemento de la Campaña: </h2>
-    <h3>{{ultimoDato.Nombres}} {{ultimoDato.Apellidos }} con ID: {{ultimoDato.id }} </h3>
-    <h3>{{Nombres}} {{ultimoDato.Apellidos }} con ID: {{ultimoDato.id }} </h3>
-  </div> -->
+  <div>
+    <h2 id="dato-ultimo" style="text-align: center; color : #3f51b5;"> Último elemento de la Campaña: </h2>
+    <h3 style="text-align: center;">{{ultimoDato?.Nombres}} {{ultimoDato?.Apellidos }} con ID: {{ultimoDato?.id }} </h3>
+    <!-- <h3>{{Nombres}} {{ultimoDato.Apellidos }} con ID: {{ultimoDato.id }} </h3> -->
+  </div>
